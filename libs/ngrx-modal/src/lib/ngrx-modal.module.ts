@@ -16,7 +16,7 @@ import {DialogEffects} from './effects/dialog.effects';
   exports: []
 })
 export class NgrxModalModule {
-  static withComponents(components: any): ModuleWithProviders {
+  public static withComponents(components: any[]): ModuleWithProviders {
     return {
       ngModule: NgrxModalModule,
       providers: [{ provide: ANALYZE_FOR_ENTRY_COMPONENTS, useValue: components, multi: true }]

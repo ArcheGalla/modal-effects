@@ -17,7 +17,9 @@ import {map, mapTo, switchMap, tap} from 'rxjs/operators';
 
 @Injectable()
 export class DialogEffects {
-  constructor(private actions$: Actions, private dialog: MatDialog) {}
+  constructor(private actions$: Actions, private dialog: MatDialog) {
+    console.log(`Dialog effect is created`);
+  }
 
   @Effect()
   openDialog$: Observable<SaveRefDialogAction> = this.actions$.pipe(

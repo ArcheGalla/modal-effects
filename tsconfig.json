@@ -19,10 +19,10 @@
       "dom"
     ],
     "paths": {
-      "ngrx-modal": [
+      "@app/ngrx-modal": [
         "dist/ngrx-modal"
       ],
-      "ngrx-modal/*": [
+      "@app/ngrx-modal/*": [
         "dist/ngrx-modal/*"
       ]
     }

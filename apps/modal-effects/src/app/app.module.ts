@@ -11,6 +11,7 @@ import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './components/main/main.component';
+import {NgrxModalModule} from '@app/ngrx-modal';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { MainComponent } from './components/main/main.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    NgrxModalModule.withComponents([]),
     StoreModule.forRoot([]),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
     EffectsModule.forRoot([]),
