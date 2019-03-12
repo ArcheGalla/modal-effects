@@ -14,7 +14,6 @@ import { DialogAComponent } from './components/dialog-a/dialog-a.component';
     FeatureAComponent,
     DialogAComponent,
   ],
-  entryComponents: [DialogAComponent],
   imports: [
     CommonModule,
     NgrxModalModule.withComponents([DialogAComponent]),

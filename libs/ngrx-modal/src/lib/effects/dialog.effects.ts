@@ -15,7 +15,9 @@ import {Observable, of} from 'rxjs';
 import {map, mapTo, switchMap, tap} from 'rxjs/operators';
 
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class DialogEffects {
   constructor(private actions$: Actions, private dialog: MatDialog) {
     console.log(`Dialog effect is created`);
