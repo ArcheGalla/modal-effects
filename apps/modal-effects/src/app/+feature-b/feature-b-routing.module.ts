@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {FeatureBComponent} from './components/feature-b/feature-b.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    component: FeatureBComponent,
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

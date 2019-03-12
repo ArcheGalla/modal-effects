@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngrx-modal": [
+        "dist/ngrx-modal"
+      ],
+      "ngrx-modal/*": [
+        "dist/ngrx-modal/*"
+      ]
+    }
   }
 }
