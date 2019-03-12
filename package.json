@@ -3,8 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+
+    "start": "ng serve modal-effects",
+    "build": "ng build modal-effects",
+
+    "start:lib": "ng build ngrx-modal --watch",
+    "build:lib": "ng build ngrx-modal",
+
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
